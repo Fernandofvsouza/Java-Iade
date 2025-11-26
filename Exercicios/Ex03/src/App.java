@@ -12,7 +12,13 @@ public class App {
         int qtdBroa, qtdPao;
         float total;
 
-        
+        System.out.print("Digite a quantidade de pães vendidos: ");
+        qtdPao = input.nextInt();
+        System.out.print("Digite a quantidade de broas vendidas: ");
+        qtdBroa = input.nextInt();
+        total = (qtdPao * 0.12f) + (qtdBroa * 1.20f);
+        System.out.printf("O total arrecadado com a venda de pães e broas foi de R$ %.2f%n", total);
+        input.close();
 
         
         
