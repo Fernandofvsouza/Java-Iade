@@ -5,11 +5,18 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int idade;
-        float idadeEmDias;
+        int idadeAnos, idadeMeses, idadeDias, resultadoFinal, resultadoAnos, resultadoMeses;
         Scanner input = new Scanner(System.in);
-        System.out.println("Qual a sua idade? ");
-        input.idade = 
-
+        System.out.println("Quantos anos voce tem? ");
+        idadeAnos = input.nextInt();
+        System.out.println("Quantos meses desde o seu ultimo aniversario? ");
+        idadeMeses = input.nextInt();
+        System.out.println("Quantos dias, desde o dia do seu aniversario? ");
+        idadeDias = input.nextInt();
+        resultadoAnos = idadeAnos * 365;
+        resultadoMeses = idadeMeses * 30;
+        resultadoFinal = resultadoAnos + resultadoMeses + idadeDias;
+        System.out.println("No total são " + resultadoFinal + " dias");
+        input.close();
     }
 }
